@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header & menu styling Start */
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+    padding: 40px 100px;
+    transition: 0.5s;
+}
+
+header .logo{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+header ul{
+   position: relative;
+   display: flex; 
+}
+
+header ul li{
+    list-style-type: none;
+    position: relative;
+}
+
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 15px;
+    display: inline-block;
+}
+
+header.sticky{
+    background: #009e66;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0, 0.1);
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: #fff;
+}
+
+/* Header & menu styling End */
+
+/* 1st Section Banner Syling Start*/
+
+section{
+    padding: 80px;;
+}
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    background: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: right center;
+}
+.banner h2{
+    font-size: 2.5em;
+    color: #444;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.banner h2 span{
+    font-size: 1.2;
+    color: #efefef;
+}
+
+.banner h3{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn{
+    position: relative;
+    background: #009e66;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* 1st Section Banner Syling End*/
+/* 2nd Section About Me Syling Start*/
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading p{
+    font-size: 14px;
+    font-style: italic;
+}
+
+.heading h2{
+    font-size: 3em;
+    color: #009e66;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBx{
+    padding-left: 40px;
+    text-align: justify;
+}
+
+.proPic{
+    width: 300px;
+    height: 350px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.w50{
+    min-width: 25%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.contentBx h2{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.heading.bottom{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bt{
+    margin-top: 20px;
+}
+
+.btn.btn-round{
+    border-radius: 50px;
+}
+
+/* 2nd Section About Me Syling End*/
+/* 3rd Section Services Syling Start*/
+
+.services{
+    background: #111;
+}
+
+.heading.white p{
+    color:#fff
+}
+
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .serviceBx{
+    color: #fff;
+    background:#161616;
+    margin: 10px 15px;
+    padding: 30px 15px;
+    text-align: center;
+    max-width: 360px;
+}
+
+.services .content .serviceBx:hover{
+    border-bottom: 2px solid #009e66;
+    cursor: pointer;
+}
+
+.services .content .serviceBx .fas{
+    color: #009e66;
+}
+
+/* 3rd Section Services Syling End*/
+/* 4th Section work Syling start*/
+
+.work .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.work .content .workBx{
+    width: 500px;
+    padding: 20px;
+}
+
+.work .content .workBx img{
+    max-width: 100%;
+    border: 1px solid rgba(0,0,0, 0.4);
+    width: 100%x;      /* Set your desired width */
+    height: 350px;     /* Set your desired height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.work .content .workBx img:hover{
+    box-shadow: 0px 0px 20px 5px #ccc;
+    transform: scale(1.008);
+    transition: 0.5s;
+}
+
+.work .content .workBx p{
+    text-align: center;
+}
+
+.work .content .workBx a,
+.work .content .workBx a:hover,
+.work .content .workBx a:active,
+.work .content .workBx a:visited
+{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
+/* 4th Section work Syling End*/
+/* 5th Section Testimonoals Syling Start*/
+.testimonial{
+    background: #111;
+}
+
+.testimonial .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.testimonial .content .testimonialBx{
+    margin: 20px;
+    padding: 60px 40px;
+    background: #161616;
+    max-width: calc(50% - 40px);
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    cursor: pointer;
+}
+.testimonial .content .testimonialBx:hover{
+    box-shadow: 0px 0px 20px 5px #ccc;
+    transform: scale(1.008);
+    transition: 0.5s;
+    border-bottom: 2px solid #009e66;
+}
+
+.testimonial .content .testimonialBx p{
+    color: #fff;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 24px;
+}
+.testimonial .content .testimonialBx h3{
+    color: #009e66;
+    text-align: end;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 20px;
+    margin-top: 40px;
+}
+/* 5th Section Testimonoals Syling End*/
+/* 6th Section Contact Syling Start*/
+
+.contact{
+    background: #fff;
+}
+
+.formBox{
+    min-width: 50%;
+}
+.formBox form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formBox form h3,
+.contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.formBox form input,
+.formBox form textarea{
+    padding: 15px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    background: #009e66;
+    color: #fff;
+    resize: vertical;
+    border:none;
+    border-radius: 4px;
+}
+
+.formBox form input:focus,
+.formBox form textarea:focus{
+    border-bottom:1px solid #fff;
+    transition: 0.5s;
+}
+
+.formBox form input::placeholder,
+.formBox form textarea::placeholder{
+    color: #fff;
+}
+.formBox form input[type="submit"]{
+    background: #009e66;
+    border-radius: 50px;
+    max-width: 250px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.contactInfo{
+    min-width: 50%;
+}
+
+.contactInfo p{
+    color:#999;
+}
+
+.contactInfoBX{
+    position: relative;
+}
+.contactInfoBX .box{
+    position: relative;
+    display: flex;
+    padding: 20px 0px;
+}
+.contactInfoBX .box .icon{
+    color: #009e66;
+    min-width: 40px;
+    display: flex;
+    padding-top:4px;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px; 
+}
+
+.contactInfoBX .box .text{
+    color: #999;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 300;
+    flex-direction: column;
+}
+.contactInfoBX .box .text h3{
+    color: #009e66;
+    font-weight: 500;
+    font-size: 18px;
+}
+.contactInfoBX .box .text address, p{
+    color: #999;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.contactInfoBX .boxSocial{
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 15px;
+}
+
+.contactInfoBX .boxSocial .fab{
+    color: #009e66;
+    font-size: 38px;
+    cursor: pointer;
+}
+
+/* 6th Section Contact Syling end*/
+/* Footer start */
+footer.copyright{
+    background: #009e66;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer.copyright p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* Footer end */
+/* responsive media start */
+
+@media (max-width:991px) 
+{
+    header,
+    header.sticky{
+        padding: 20px 50px;
+        z-index: 2;
+        background: #009e66;
+    }
+    header .menu{
+        display: none;
+        z-index: 1;
+    }
+    header .menu{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top:75px;
+        left: -100%;
+        padding: 100px 50px;
+        background: #fff;
+        text-align: center;
+        border-top: 1px solid rgba(0,0,0, 0.1);
+        transition: 0.5s;
+    }
+
+    header .menu.active{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top:75px;
+        left: 0;
+        padding: 100px 50px;
+        background: #fff;
+        text-align: center;
+        border-top: 1px solid rgba(0,0,0, 0.1);
+    }
+
+    header ul li a{
+        font-size: 20px;
+        font-weight: 400;
+        color:#111;
+        margin: 10px 0;
+    }
+    
+    header.sticky ul li a {
+        color: #111;
+    }
+
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background-image: url('../images/menu.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .toggle.active{
+        width: 40px;
+        height: 40px;
+        background-image: url('../images/close.png');
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    /* header.sticky .toggle{ 
+        filter: invert(1); // if want to black and white theme then use this
+    } */
+
+    /* banner changes */
+    section{
+        padding: 100px 30px;
+    }
+
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+
+    .textBox{
+       position: relative;
+       top: 170px;
+    }
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 100px;
+    }
+
+    /* about seaction changes */
+    .content{
+        flex-direction: column;
+    }
+    .contentBx{
+        padding: 0px;
+    }
+    .contentBx h2{
+        font-size: 1.5em;
+    }
+    .contentBx p{
+        font-size: 16px;
+    }
+    .content .w50 img{
+        display: block;
+        margin: 0 auto 30px auto;
+    }
+
+    .heading h2{
+        font-size: 2em;
+    }
+
+    .testimonial{
+        padding: 50px 0;
+    }
+    .testimonial .content .testimonialBx{
+        max-width: 100%;
+        padding: 30px 20px;
+    }
+    .testimonial .content .testimonialBx p{
+        font-size: 16px;
+    }
+    .testimonial .content .testimonialBx h3{
+        font-size: 16px;
+    }
+    
+    .content{
+        flex-direction: column;
+    }
+    .formBox,
+    .contactInfo{
+        min-width: 100%;
+    }
+    .formBox form input,
+    .formBox form textarea{
+        font-size: 14px;
+    }
+    .formBox form input[type="submit"]{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .contactInfoBX .box{
+        align-items: center;
+    }
+    .contactInfoBX .boxSocial{
+        justify-content: center;
+        padding-left: 0px;
+        margin: 20px 0px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .testimonial .content .testimonialBx{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 30px;
+    }
+    .heading.bottom{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction:row;
+    }
+}
+
+@media (max-width: 600px){
+    .testimonial .content .testimonialBx{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 30px;
+    }
+    .heading.bottom{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction:column;
+    }
+}

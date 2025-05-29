@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatMansCode App</title>
+    <link rel="shortcut icon" href="resources/images/favicon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="resources/style/style.css">
+    <script src="resources/js/my-script.js" language="javascript"></script>
+
+    <!-- Core Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <!-- Solid style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/solid.min.css">
+    <!-- Brands style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/brands.min.css">
+</head>
+
+<body>
+
+    <!-- Menu Items -->
+    <Header>
+        <a href="" class="logo">Proftfolia</a>
+        <div class="toggle" onclick="toggleMenu()">
+        </div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+            <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu()">Testimonial</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </Header>
+
+    <!-- App Banner section -->
+
+    <section class="banner" id="home">
+        <div class="textBox">
+            <h2><i>Hello, I am </i><br> <span>CatMan</span></h2>
+            <h3>I'm a FullStack Web Developer.</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+
+    <!-- App About section -->
+
+    <section class="about" id="about">
+
+        <div class="heading">
+            <p>Get To know Me</p>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="content">
+            <div class="w50">
+                <img src="resources/images/about-me.jpg" alt="no image founded" class="proPic">
+            </div>
+
+            <div class="contentBx w50">
+                <h2>Who Am I?</h2>
+                <h3>I'm <b>CatMan</b>, a software enginner, who love to code & develop a web applications.
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                    massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                </p> <br>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                    massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                </p>
+
+                <div class="heading bottom">
+                    <a href="resources/resume.pdf" class="btn btn-round" target="_blank">Download CV</a>
+                    <div class="bt">
+                        <b>Name:</b>CatMAN <br>
+                        <b>Email:</b>catmascodes@gmail.com
+                    </div>
+                    <div class="bt">
+                        <b>Age:</b>31 <br>
+                        <b>Location:</b> India
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section  -->
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Our Services</h2>
+            <p>Services That I provides to My Clients.</p>
+        </div>
+
+        <div class="content">
+            <div class="serviceBx">
+                <i class="fas fa-paint-brush fa-4x"></i>
+                <h3>Web Designing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+            <div class="serviceBx">
+                <i class="fas fa-code fa-4x"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+            <div class="serviceBx">
+                <i class="fas fa-mobile-alt fa-4x"></i>
+                <h3>Mobile App Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+            <div class="serviceBx">
+                <i class="fas fa-coffee fa-4x"></i>
+                <h3>Java & Spring</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+            <div class="serviceBx">
+                <i class="fas fa-database fa-4x"></i>
+                <h3>MySQL Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+            <div class="serviceBx">
+                <i class="fas fa-cloud fa-4x"></i>
+                <h3>AWS & Cloud Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- work section  -->
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>Our Latest Work</h2>
+            <p>Showcasing some of <b>My Projects</b></p>
+        </div>
+
+        <div class="content">
+            <div class="workBx">
+                <a href="http://github.com/" target="_blank">
+                    <img src="resources/images/image-1.jpg" alt="No Image founded">
+                    <p>Develop a Full-Stack E-commerce Web App</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="http://github.com/" target="_blank">
+                    <img src="resources/images/image-2.jpg" alt="No Image founded">
+                    <p>Create a Responsive Portfolio Website Using CSS & Flexbox</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="http://github.com/" target="_blank">
+                    <img src="resources/images/image-3.jpg" alt="No Image founded">
+                    <p>Build a Mobile App for Task Management</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="http://github.com/" target="_blank">
+                    <img src="resources/images/image-4.png" alt="No Image founded">
+                    <p>Develop a REST API Using Java & Spring Boot</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="http://github.com/" target="_blank">
+                    <img src="resources/images/image-5.jpg" alt="No Image founded">
+                    <p>Design and Implement a MySQL-Based Inventory Management System</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="http://github.com/" target="_blank">
+                    <img src="resources/images/image6.jpg" alt="No Image founded">
+                    <p>Deploy a Cloud-Native Blog Platform on AWS</p>
+                </a>
+            </div>
+
+            <div class="heading">
+                <a href="http://github.com/" target="_blank" class="btn">View All My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial section  -->
+    <section class="testimonial" id="testimonial">
+        <div class="heading white">
+            <h2>Testimonial</h2>
+            <p>Some of the <b>Testimonial</b> from my clients.</p>
+        </div>
+        <div class="content">
+            <div class="testimonialBx">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                    massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                </p>
+                <h3>Nick Fury <br>Director of Avengers</h3>
+            </div>
+            <div class="testimonialBx">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                    massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                </p>
+                <h3>Tonny Stark <br>Iron Man</h3>
+            </div>
+    </section>
+
+    <!-- contact section  -->
+
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Get In touch</h2>
+            <p>Feel free to <b>Contact Me</b> for the freelaning work</p>
+        </div>
+
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+           
+                <div class="contactInfoBX">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address :</h3>
+                            <address>NH 1, Aenean massa,<br> Near library,<br>ZY Colony, Gujarat India,<br> 381234 </address>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone No :</h3>
+                            <p>9876543210</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email Address:</h3>
+                            <p>myportfolioapp@gmail.com</p>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Social Connect</h3>
+                    <div class="boxSocial">
+                        <div class="icon">
+                            <a href="www.facebook.com" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="www.twitter.com" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="www.instagram.com" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="www.linkedin.com" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+            <div class="formBox">
+                <form action="">
+                    <h3>Contact Me</h3>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea name="" id="" rows="6" placeholder="Message"></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </form>
+            </div>   
+
+        </div>
+    </section>
+
+<!-- footer section  -->
+    <footer class="copyright">
+        <p>Copyright &copy; 2025 <b>CatMan</b>. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
